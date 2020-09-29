@@ -45,14 +45,7 @@ public class Main {
         boolean CorrectInput = false;
         int InputInteger = 0;
         System.out.print(InputText);
-        while (!CorrectInput) {
-            try {
-                InputInteger = scanner.nextInt();
-                CorrectInput = true;
-            } catch (InputMismatchException e) {
-                System.out.println(InputText);
-            }
-        }
+        InputInteger = scanner.nextInt();
         return InputInteger;
     }
 
